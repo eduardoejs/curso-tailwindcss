@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container bg-red-100 mx-auto p-4 my-4 text-red-900 rounded-md">
+        <p class="font-medium">O texto do container</p>
+    </div>
+
+    <div class="container bg-green-100 mx-auto p-4 my-4 text-green-700 rounded-md shadow-md md:bg-blue-100 md:text-blue-700">
+        <p class="font-medium">Exercício 1</p>
+    </div>
+
+    <div class="container bg-blue-200 m-4 border-8 border-blue-500 border-box p-10">
+        <p>Border Box</p>
+    </div>
+
+    <div class="container bg-yellow-200 m-4 border-8 border-yellow-500 p-10">
+        <p>Border Box - Default</p>
+    </div>
+
+    <div class="container bg-green-200 m-4 border-8 border-green-500 box-content p-10">
+        <p>Box Content</p>
+    </div>
+
+    <!-- display -->
+    <!-- SPAN não tem comportamentos de bloco sempre são inline -->
+    <span class="block bg-red-100">Não são elementos de bloco</span>
+    <span class="block bg-green-100">Não são elementos de bloco</span>
+
+    <!-- DIV tem comportamento de bloco por default -->
+    <div class="bg-blue-100 inline-block">Block</div>    
+    <div class="bg-blue-100 inline-block">Block</div>
+
+    <!-- hidden remove a DIV da landing page -->
+    <div class="bg-green-200 hidden">Estou aparecendo</div>
+
+    <!-- Exercicio 2 -->
+    <div class="container m-6 p-6 mx-auto bg-gray-100">
+        <div class="inline-block bg-purple-500 p-5"></div>
+        <div class="inline-block bg-yellow-500 p-5"></div>
+        <div class="inline-block bg-pink-500 p-5"></div>
+    </div>
+
+    <!-- float e clearfix -->
+    <div class="bg-gray-200 float-right">Float Right</div>
+    <div class="bg-gray-200 float-left">Float left</div>
+    <div class="clear-both"></div>
+    <div class="bg-gray-200 float-right">Float Right</div>
+    <div class="bg-gray-200 float-left">Float left</div>
+    <div class="clear-both"></div>
+
+    <!-- overflow -->
+    <div class="overflow-hidden h-16 m-6 bg-red-300">
+        <p>Testando overflow</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>        
+    </div>
+
+    <div class="overflow-auto h-16 m-6 bg-red-300">
+        <p>Testando overflow</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>        
+    </div>
+
+    <div class="overflow-x-auto h-16 m-6 bg-red-300">
+        <p>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+    </div>
+    <div class="overflow-y-auto h-16 m-6 bg-red-300">
+        <p>Testando overflow</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque excepturi eius, beatae dolores veritatis iure iste natus sit obcaecati sunt dolor molestiae possimus dolorem, rem recusandae quod aspernatur accusamus quae!</p>        
+    </div>
+
+    <!-- Positions -->
+    <div class="relative bg-yellow-100">
+        teste
+        <div class="absolute top-0 right-0 bg-red-900 text-white p-2">
+            Absolute
+        </div>
+    </div>
+
+    <div class="relative container bg-red-100 mx-auto p-4 my-4 text-red-900 rounded-md mt-10">
+        <div class="absolute top-0 right-0 -mr-1 -mt-2 ring-2 ring-offset-2 ring-opacity-70 ring-red-500 bg-red-500 rounded-full p-2"></div>
+        <p class="font-medium">O texto do container</p>
+    </div>
+
+    <!-- Exercicio 3 -->
+    <div class="container relative bg-gray-200 h-20 mx-auto">
+        <div class="absolute right-0 bottom-0 bg-gray-500 text-white">Exercício 3</div>
+    </div>
+
+    <!-- Visibility -->
+    <div class="container mx-auto bg-red-200 visible">Estou oculto</div>
+
+    <!-- z-index -->
+    <div class="container relative">
+        <div class="bg-red-300 h-20 w-20 p-6 absolute m-4 z-10">Na frente</div>
+        <div class="bg-red-600 h-20 w-20 p-6 absolute">Atrás</div>
+    </div>
+
+    <!-- Exercicio 4 -->
+    <div class="container relative mt-36">
+        <div class="bg-red-300 h-20 w-20 p-6 absolute m-6 z-50"></div>
+        <div class="bg-red-400 h-20 w-20 p-6 absolute m-4 "></div>
+        <div class="bg-red-600 h-20 w-20 p-6 absolute m-2 mt-10 "></div>
+    </div>
+</body>
+</html>
