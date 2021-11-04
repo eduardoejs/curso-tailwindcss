@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaçamento e Alinhamento</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="container mx-auto">
+    <!-- JUSTIFY - aplicado no eixo x -->   
+    <p class="font-semibold p-2">Justify: eixo x do container</p>
+    <div class="relative flex p-2 bg-gray-50 border border-gray-300 justify-end mb-1">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">justify-end</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">1</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">2</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">3</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">4</div>
+    </div>
+    <div class="relative flex p-2 bg-gray-50 border border-gray-300 justify-center mb-1">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">justify-center</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">1</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">2</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">3</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">4</div>
+    </div>
+    <div class="relative flex p-2 bg-gray-50 border border-gray-300 justify-between mb-1">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">justify-between</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">1</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">2</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">3</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">4</div>
+    </div>
+    <div class="relative flex p-2 bg-gray-50 border border-gray-300 justify-around mb-1">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">justify-around</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">1</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">2</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">3</div>
+        <div class="bg-blue-300 p-4 m-4 text-blue-700">4</div>
+    </div>
+
+    <!-- CONTENT - aplicado no eixo y -->
+    <p class="font-semibold p-2">Content: eixo y do container</p>
+    <div class="relative flex flex-wrap content-center bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">content-center</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">1</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">2</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">3</div>
+    </div>
+
+    <div class="relative flex flex-wrap content-end bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">content-end</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">1</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">2</div>
+        <div class="bg-blue-300 h-10 p-2 mx-4 text-blue-700">3</div>
+    </div>
+
+    <div class="relative flex flex-wrap content-around bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 h-10 p-2 w-1/3 text-blue-700">content-around</div>
+        <div class="bg-blue-300 h-10 p-2 w-1/3 text-blue-700">1</div>
+        <div class="bg-blue-300 h-10 p-2 w-1/3 text-blue-700">2</div>
+        <div class="bg-blue-300 h-10 p-2 w-1/3 text-blue-700">3</div>
+        <div class="bg-blue-300 h-10 p-2 w-1/3 text-blue-700">4</div>
+        <div class="bg-blue-300 h-10 p-2 w-1/3 text-blue-700">5</div>        
+    </div>
+    
+    <!-- ALIGN - aplica como os itens serão dispostos no container. Valor default: strech -->
+    <p class="font-semibold p-2">Align: como os itens são dispostos no container. Valor default: strech</p>    
+    <div class="relative flex items-start bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">items-start</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">1</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">2</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">3</div>
+    </div>
+    <div class="relative flex items-center justify-center bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">items-center justify-center</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">1</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">2</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">3</div>
+    </div>
+    <div class="relative flex items-end bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">items-end</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">1</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">2</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">3</div>
+    </div>
+
+    <!-- grid -->
+    <p class="font-semibold p-2">Place-Content: aplicado ao Grid</p>
+    <div class="relative grid grid-cols-3 place-content-center bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">place-content-center</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">1</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">2</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">3</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">4</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">5</div>
+    </div>
+    <div class="relative grid grid-cols-3 place-content-around bg-gray-50 border border-gray-300 mb-1 h-48">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">place-content-around</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">1</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">2</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">3</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">4</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">5</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">6</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">7</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">8</div>
+    </div>
+    <div class="relative grid grid-cols-3 place-items-center bg-gray-50 border border-gray-300 mb-1 h-40">
+        <div class="absolute top-0 left-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 m-2 p-2 text-blue-700">place-items-center</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">1</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">2</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">3</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">4</div>
+        <div class="bg-blue-300 p-2 m-2 text-blue-700">5</div>        
+    </div>
+
+    <!-- Padding -->
+    <p class="font-semibold p-2">Padding</p>
+    <div class="relative bg-gray-50 border border-gray-300 mb-1 h-40 p-10">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <span class="bg-blue-300 text-blue-700 p-4">padding</span>
+        <span class="bg-blue-300 text-blue-700 px-4">padding x</span>
+        <span class="bg-blue-300 text-blue-700 py-4">padding y</span>
+        <span class="bg-blue-300 text-blue-700 px-4 py-2">Botão</span>
+        <span class="bg-blue-300 text-blue-700 pl-4 pt-6 pr-8 pb-10">Padding custom</span>
+        <span class="ml-2 px-4 py-2 bg-green-300 text-green-700 font-bold rounded-md hover:bg-green-400 hover:text-green-100 ring-2 ring-green-400 ring-offset-4 ring-offset-green-100">Exercício 11</span>
+    </div>
+
+    <!-- Margin -->
+    <p class="font-semibold p-2">Margin</p>
+    <div class="relative bg-gray-50 border border-gray-300 mb-1 h-40 p-10">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 text-blue-700 w-20 h-10 mx-auto">margin</div>        
+        <div class="bg-green-100 border border-green-200 text-green-600 w-20 mx-auto mt-2 text-center font-semibold">Exercício 12</div>
+    </div>
+
+    <!-- Width -->
+    <p class="font-semibold p-2">Width</p>
+    <div class="relative bg-gray-50 border border-gray-300 mb-1 h-40 p-2">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 text-blue-700 font-bold mx-auto p-4 max-w-5xl">max-width</div>        
+        <div class="bg-blue-300 text-blue-700 font-bold mt-1 p-4 w-40 min-w-full">min-width</div>                
+    </div>
+
+    <!-- Height -->
+    <p class="font-semibold p-2">Height</p>
+    <div class="relative bg-gray-50 border border-gray-300 mb-1 h-40 p-4">
+        <div class="absolute top-0 right-0 p-1 bg-gray-200 text-gray-400 text-xs">container</div>
+        <div class="bg-blue-300 text-blue-700 font-bold p-4 h-28 min-h-screen">min-height</div> 
+        <div class="bg-blue-300 text-blue-700 font-bold p-4 h-64 max-h-screen mt-1">max-height</div> 
+    </div>
+
+</body>
+</html>
