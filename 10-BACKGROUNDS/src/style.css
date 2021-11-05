@@ -1,0 +1,5 @@
+/* import de fontes antes das classes do tailwindcss */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
