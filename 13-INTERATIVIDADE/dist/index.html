@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatividade</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="m-4">
+        <select class="appearance-none">
+            <option value="">Teste</option>
+        </select>
+        <select>
+            <option value="">Teste</option>
+        </select>
+    </div>
+
+    <div class="m-2 h-20 bg-blue-100 cursor-pointer"></div>
+    <div class="m-2 h-20 bg-blue-100 cursor-wait"></div>
+    <div class="m-2 h-20 bg-blue-100 cursor-not-allowed"></div>
+    <div class="m-2 h-20 bg-blue-100 cursor-text"></div>
+
+    <div class="m-4 bg-gray-100 h-20 flex items-center">
+        <input type="text" placeholder="Click me" class="outline-none border border-gray-200 rounded-md px-4 py-2 shadow-md ml-2">
+    </div>
+
+    <div class="m-4">
+        <select class="pointer-events-none">
+            <option value="">Teste Pointers</option>
+        </select>
+        <select>
+            <option value="">Teste Pointers</option>
+        </select>
+    </div>
+    <div class="m-4">
+        <textarea name="" id="" cols="30" rows="10"  class="pointer-events-none border rounded-lg p-2 shadow-md">Pointer events none</textarea>
+        <textarea name="" id="" cols="30" rows="10" class="outline-none border rounded-lg p-2 shadow-md"></textarea>
+    </div>
+
+    <div class="m-4">
+        <textarea name="" id="" cols="30" rows="10"  class="border rounded-lg p-2 shadow-md resize-none">Pointer events none</textarea>
+        <textarea name="" id="" cols="30" rows="10" class="border rounded-lg p-2 shadow-md resize-x"></textarea>
+        <textarea name="" id="" cols="30" rows="10" class="border rounded-lg p-2 shadow-md resize-y"></textarea>
+        <textarea name="" id="" cols="30" rows="10" class="border rounded-lg p-2 shadow-md resize"></textarea>
+    </div>
+
+    <div class="m-4">
+        <p class="select-none">Este parágrafo não pode ser selecionado</p>
+    </div>
+
+</body>
+</html>
