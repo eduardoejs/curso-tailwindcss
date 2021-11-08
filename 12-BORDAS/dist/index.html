@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-ubuntu">
+    <div>
+        <button class="m-4 p-4 bg-blue-200 rounded">Rounded</button>
+        <button class="m-4 p-4 bg-blue-200 rounded-3xl">Rounded 3xl</button>
+        <button class="m-4 p-4 bg-blue-200 rounded-full">Rounded full</button>
+    </div>
+    <div class="flex">
+        <span class="bg-blue-200 w-20 h-20 block rounded-full flex items-center justify-center m-4">Circular</span>
+        <span class="bg-blue-200 w-40 h-20 block rounded-full flex items-center justify-center m-4">Pílula</span>
+    </div>
+    <div class="flex">
+        <span class="bg-blue-200 w-20 h-10 block m-4 text-blue-600 border-4 border-blue-300 flex items-center justify-center">Botão</span>
+        <span class="bg-blue-200 w-20 h-10 block m-4 text-blue-600 rounded-lg border-4 border-blue-300 flex items-center justify-center">Botão</span>
+    </div>
+
+    <div class="flex">
+        <span class="bg-blue-200 w-20 h-10 block m-4 text-blue-600 border-4 border-blue-600 border-opacity-25 flex items-center justify-center">Botão</span>
+        <span class="bg-blue-200 w-20 h-10 block m-4 text-blue-600 border-4 border-blue-600 border-opacity-75 flex items-center justify-center">Botão</span>
+        <div class="bg-blue-50 w-96 h-20 m-4 shadow-md hover:bg-white text-blue-400 rounded-lg border-2 border-opacity-50 border-blue-300 border-dashed flex flex-col justify-center items-center">
+            <div class="">                
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+            </div>            
+            <div class="text-sm tracking-wider">Arraste e solte o(s) arquivo(s) aqui</div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-200 divide-dotted text-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="divide-y-2 divide-blue-200 divide-dotted text-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
