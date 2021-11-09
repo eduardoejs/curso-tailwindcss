@@ -1,0 +1,19 @@
+{
+  "name": "14-CLONE-AMAZON",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dependences": "npm install -D tailwindcss@latest postcss@latest autoprefixer@latest",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/css/styles.css",
+    "automation": "npm run dependences && npx tailwindcss init && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
+}
