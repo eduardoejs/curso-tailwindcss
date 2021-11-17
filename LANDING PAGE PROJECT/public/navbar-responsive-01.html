@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Navbar Responsive #01</title>
+</head>
+<body class="antialiased bg-gray-100 font-Poppins">
+  
+  <header class="hidden md:block bg-white">
+    <div class="container flex justify-between">      
+      <img class="py-1" src="./img/logo-fatec-160x98-20.png" alt="Logotipo Fatec Marília">
+      <img class="py-1" src="./img/brasao-cpsgov-280x98.png" alt="Brasao CPS e Gov">      
+    </div>
+  </header>
+
+  <header class="sticky top-0">
+    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white shadow-md">
+      <!-- Logo -->
+      <div>                
+        <!-- Logo SVG -->
+      </div>
+
+      <!-- Hamburger Icon -->
+      <svg
+      xmlns="<http://www.w3.org/2000/svg>"
+      id="menu-button"
+      class="h-6 w-6 cursor-pointer md:hidden block"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+      </svg>
+
+      <!-- Menu Items -->
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0">
+            <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="">Features</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="">Pricing</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="">Custumers</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="">Blog</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-purple-400" href="">Sign Up</a>
+            </li>
+        </ul>        
+      </div>
+    </nav>    
+  </header>
+
+  <!-- Quadro de avisos -->
+  <section class="container my-10 space-y-4">
+    <!-- #1 -->
+    <div class="flex">      
+      <div class="flex items-center px-1 rounded-l-lg bg-yellow-400 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      </div>
+      <div class="w-full rounded-r-lg p-4 bg-appcolor-gold shadow-md">
+        <div class="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4">
+          <h2 class="font-semibold uppercase text-appcolor-gray">Canais de Atendimento</h2>          
+          <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">Confira os canais de atendimento durante a pandemia</p>
+          <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+        </div>
+      </div>
+    </div> 
+
+    <!-- #2 -->
+    <div class="flex">
+      <div class="flex items-center px-1 rounded-l-lg bg-yellow-400 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      </div>
+      <div class="w-full rounded-r-lg p-4 bg-appcolor-gold shadow-md">
+        <div class="flex flex-col md:flex-row md:justify-start md:items-center md:space-x-4">
+          <h2 class="font-semibold uppercase text-appcolor-gray">Canal de Dúvida</h2>          
+          <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">O Centro Paula Souza disponibilizou um canal para solucionar as dúvidas referentes às aulas remotas.</p>
+          <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+        </div>
+      </div>
+    </div>   
+
+  </div> 
+
+  </section>  
+
+
+    <main class="container">
+        <section class="">
+            <div class="flex flex-col justify-center items-center bg-white mx-auto rounded-lg my-10 p-16 shadow-md text-center">
+                <h1 class="text-2xl font-medium">Responsive Navbar with TailwindCSS</h1>
+                <p>https://blog.logrocket.com/how-to-build-responsive-navbar-tailwind-css/</p>
+            </div>
+        </section>
+        <section class="px-4 mb-16">
+            <div class="max-w-5xl mx-auto text-justify bg-white rounded-lg shadow-md px-6 md:px-8 py-6">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam esse ratione sit repudiandae est? Consectetur saepe voluptates, distinctio vel repellat ad quas nobis amet illo, voluptatibus itaque pariatur aut!</p>
+              <p>Tempora quaerat officiis officia voluptatibus saepe odit, rem a libero cum hic perferendis nisi exercitationem architecto ab quod impedit ut. Itaque laudantium minus quos fugiat, a totam. Optio, voluptatum consectetur?</p>
+              <p>Eos eveniet incidunt inventore placeat cum quas laboriosam corrupti nihil pariatur quam odit laborum quod necessitatibus enim cupiditate ducimus distinctio, labore dicta temporibus maiores error earum! Eos cupiditate fuga perspiciatis.</p>
+              <p>Quisquam provident nesciunt aut illum atque soluta. Atque, cum voluptatibus totam sint illo, commodi cumque modi repudiandae, fugit aliquid tempora unde fuga ipsa labore odio itaque dolorem maiores fugiat praesentium?</p>
+              <p>Illum tempore, velit commodi nostrum maiores neque, eum impedit officia molestias doloribus harum modi. Eaque, iste! Et nulla tempora accusantium. Sunt quam dignissimos quia nostrum sint dicta ut tempora tenetur.</p>
+              <p>Et quas temporibus esse dicta earum soluta rem beatae eveniet provident in asperiores placeat maiores doloribus ea cumque magnam, veritatis tempore sed unde libero commodi minima est dolorem? Culpa, voluptatem?</p>
+              <p>Nobis reiciendis neque cumque omnis distinctio nulla, earum magni sunt laborum quaerat quae recusandae? Quo odio dolorem nam aliquid asperiores aut ab vero. Minus recusandae tenetur, officiis molestias qui autem!</p>
+              <p>Dolor quisquam, a quae rem cumque voluptatum molestiae omnis hic totam necessitatibus veniam placeat ut nemo laudantium magni explicabo officia magnam perferendis labore suscipit! Quisquam ipsa ullam ab saepe blanditiis!</p>
+              <p>Iusto excepturi voluptatum amet ad eveniet. Recusandae quia maiores provident ducimus fuga nam dignissimos iusto voluptatibus facilis possimus sint, consequatur saepe molestiae accusamus laborum voluptate vero velit in! Perferendis, aperiam.</p>
+              <p>Harum sint laborum asperiores perferendis, autem facilis eius cupiditate tenetur id, repellat, magni quia mollitia at! Facere corporis numquam rerum ducimus voluptatum nostrum magni vel cum blanditiis, ab non facilis?</p>
+              <p>Nostrum eum error quis maxime itaque a, maiores ipsam iste sapiente delectus, quisquam perferendis dolores suscipit esse corrupti facilis rerum sint deserunt ad id mollitia ipsa aliquid! Sint, labore nam?</p>
+              <p>Omnis consequatur laborum fugiat sapiente? Saepe, molestiae magnam? Deleniti cumque veritatis saepe tenetur architecto possimus, earum fugit iste sequi aspernatur alias autem, corrupti repellat accusantium amet quas repudiandae molestiae aperiam.</p>
+              <p>A, quo! Facilis, dignissimos provident eius porro ratione modi vel totam possimus laboriosam fuga alias, quam voluptatem tempore obcaecati necessitatibus quas nihil eum similique dolorum velit animi. Reiciendis, ex vel?</p>
+              <p>Laborum doloribus suscipit cum repudiandae quisquam voluptas, aliquam amet officia earum saepe quas laudantium, pariatur fugit dolores voluptate consequuntur, sed ex totam. Necessitatibus itaque neque culpa labore tempora mollitia aperiam.</p>
+              <p>Maiores accusantium quod cumque vitae cupiditate mollitia atque dolores in inventore asperiores aliquid, sed consequatur expedita modi repudiandae nemo architecto illo, at alias unde reiciendis. Sequi quaerat enim nisi sapiente.</p>
+              <p>Nulla rerum sequi sit beatae alias maiores! Ad ratione beatae minus modi consequuntur nam eaque fugiat amet voluptates! Quas tempore fugiat neque aliquid ipsum voluptatum cupiditate exercitationem, assumenda eum quisquam?</p>
+              <p>Impedit nobis error maxime sequi mollitia sit ad doloremque libero nihil, accusamus dicta natus, laborum magni harum voluptatem veniam explicabo sapiente obcaecati! Ea inventore amet quasi fugit fuga esse nam.</p>
+              <p>Magni nobis inventore quis cupiditate adipisci tenetur tempore vitae quas necessitatibus? Beatae in magnam, illo quos placeat sequi itaque facilis vero et animi quisquam eaque culpa aliquid autem cum dolore.</p>
+              <p>Dolorem reprehenderit accusantium rem eveniet nobis repudiandae dignissimos. Molestias possimus cupiditate maxime neque repudiandae? Ab possimus sint quia. Omnis adipisci quae eligendi magni. Dolor iusto sed reiciendis atque excepturi deserunt!</p>
+                                          
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const button = document.querySelector('#menu-button'); // Hamburger Icon
+        const menu = document.querySelector('#menu'); // Menu
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
