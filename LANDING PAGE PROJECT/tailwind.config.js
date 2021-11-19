@@ -20,6 +20,7 @@ module.exports = {
       Ubuntu: ["Ubuntu", "sans-serif"],
       Poppins: ["Poppins", "sans-serif"],
       Roboto: ["Roboto", "sans-serif"],
+      Inter: ["Inter", "sans-serif"],
     },
     container: {
       center: true,
@@ -29,5 +30,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

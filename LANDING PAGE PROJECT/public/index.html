@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>F130</title>
+</head>
+<body class="antialiased bg-white font-Ubuntu">
+  
+  <!-- Header Logotipos -->
+  <header class="hidden md:block bg-white">
+    <div class="container flex justify-between">      
+      <img class="py-0" src="./img/logo-fatec-160x98-20.png" alt="Logotipo Fatec Marília">
+      <img class="py-0" src="./img/brasao-cpsgov-280x98.png" alt="Brasao CPS e Gov">      
+    </div>
+  </header>
+
+  <!-- Header Navbar -->
+  <header class="sticky top-0 z-10 bg-white shadow-md">
+    <nav class="container flex flex-wrap items-center justify-between w-full py-2 md:py-0 px-4 text-lg text-gray-700 ">
+      <!-- Logo -->
+      <div>
+        <!-- Logo SVG -->
+        <img id="logo-navbar" class="hidden" src="img/logo-fatec-90x32.png" alt="Logotipo Fatec Marília">
+      </div>
+
+      <!-- Hamburger Icon -->
+      <svg
+      xmlns="<http://www.w3.org/2000/svg>"
+      id="menu-button"
+      class="h-10 w-10 cursor-pointer md:hidden block"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+      </svg>
+
+      <!-- Menu Items -->
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul class="text-base text-appcolor-gray pt-4 md:flex md:justify-between md:pt-0">
+            <li>
+                <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">A Fatec</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">Cursos</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">Aluno</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">Notícias</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">Publicações</a>
+            </li>
+            <li>
+                <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">Vestibular</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-appcolor-red" href="">Área Exclusiva</a>
+          </li>
+        </ul>        
+      </div>
+    </nav>    
+  </header>
+
+  <!-- Quadro de avisos -->
+  <section class="container my-5 py-5 space-y-4">
+    <!-- #1 -->
+    <div class="flex">      
+      <div class="flex items-center px-1 rounded-l-md bg-yellow-400 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      </div>
+      <div class="w-full rounded-r-md p-4 bg-appcolor-gold shadow-md">
+        <div class="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4">
+          <h2 class="font-semibold uppercase text-appcolor-gray">Canais de Atendimento</h2>          
+          <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">Confira os canais de atendimento durante a pandemia</p>
+          <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+        </div>
+      </div>
+    </div> 
+    <!-- #2 -->
+    <div class="flex">
+      <div class="flex items-center px-1 rounded-l-md bg-yellow-400 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      </div>
+      <div class="w-full rounded-r-md p-4 bg-appcolor-gold shadow-md">
+        <div class="flex flex-col md:flex-row md:justify-start md:items-center md:space-x-4">
+          <h2 class="font-semibold uppercase text-appcolor-gray">Canal de Dúvida</h2>          
+          <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">O Centro Paula Souza disponibilizou um canal para solucionar as dúvidas referentes às aulas remotas.</p>
+          <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  </section>  
+
+  <!-- TAS -->
+  <section class="my-5 py-5">
+    <div class="container grid grid-cols-1 lg:grid-cols-2">
+      <div class="flex flex-1 flex-col items-center lg:items-start lg:gap-10">
+        <h2 class="text-appcolor-blue font-bold text-3xl md:text-5xl lg:text-6xl text-center lg:text-left mb-6 lg:mt-14">Quem quer ser um tecnólogo?</h2>
+        <p class="text-appcolor-gray-100 text-lg text-center lg:text-left mb-10 lg:pr-10">Curso técnico e tecnólogo, você sabe a diferença entre eles? Muita gente ainda confunde essas duas modalidades de ensino, inclusive as empresas. Marcelo Tas te explica as vantagens e as diferenças de cada um deles para te ajudar a escolher qual curso fazer.</p>
+      </div>
+      
+      <div class="aspect-w-16 aspect-h-9 md:aspect-w-8 md:aspect-h-3">
+        <iframe class="rounded-md" src="https://www.youtube.com/embed/Pq51BE4GF-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+  </section>
+
+<!-- Vestibular -->
+<section class="my-5 py-5 ">
+  <div class="container">
+    <div class="grid grid-cols-1">
+      <!-- Header -->
+      <div>
+        <h1 class="text-appcolor-blue font-bold text-3xl md:text-5xl lg:text-6xl text-center lg:text-right mb-4">Vestibular Fatec</h1>
+        <p class="font-semibold text-appcolor-red text-center lg:text-right md:text-2xl mt-0 mb-4 uppercase">Ensino Superior Gratuito!</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-6 lg:gap-14">
+        <!-- Banner -->
+        <!-- <div class="aspect-w-2 aspect-h-2">          
+          <img  src="img/vestibular.jpeg" alt="">
+        </div> -->
+        <div class="">
+          <img src="img/vectors/undraw_exams_g-4-ow.svg" alt="" srcset="">          
+        </div>
+
+        <!-- Conteudo -->
+        <div>
+          <div class="hidden md:block max-h-screen overflow-y-scroll border border-gray-200 rounded-lg px-4">
+            <p class="text-center text-xl py-4">Encontre aqui a programação para o Processo Seletivo Vestibular 1º SEM/22.</p>
+            <ul class="list-disc list-inside">
+              <li><strong>De 21/10 até as 15h do dia 26/10/2021</strong><br>
+              Inscrições para isenção/redução da taxa de inscrição e envio por meio digital da documentação comprobatória, via upload, no site vestibularfatec.com.br</li>
+              <li><strong>De 27/10 até as 15h do dia 01/12/2021</strong><br>
+              Inscrições para o Processo Seletivo no site vestibularfatec.com.br e envio por meio digital, via upload, da documentação comprobatória - Valor da taxa R$ 39,00</li>
+              <li><strong>De 19/11 até as 15h do dia 01/12/2021</strong><br>
+              Inscrição para o candidato beneficiado com a isenção/redução da taxa de inscrição no site vestibularfatec.com.br</li>
+              <li><strong>19/11/2021, a partir das 15h</strong><br>
+              Divulgação do resultado da análise dos pedidos de isenção/redução de taxa no site vestibularfatec.com.br</li>
+              <li><strong>De 22/11 até 23/11/2021</strong><br>
+              Prazo para interposição de recurso para os candidatos que tiveram o pedido de isenção e redução da taxa de inscrição indeferido no site vestibularfatec.com.br</li>
+              <li><strong>29/11/2021, a partir das 15h</strong><br>
+              Divulgação da análise dos recursos de isenção/redução da taxa de inscrição no site vestibularfatec.com.br</li>
+              <li><strong>15/12/2021, a partir das 15h</strong><br>
+              Divulgação da lista preliminar das inscrições deferidas e indeferidas para o processo seletivo no site vestibularfatec.com.br</li>
+              <li><strong>De 16/12 até 17/12/2021</strong><br>
+              Período para interposição de recurso e retificação das notas e documentação dos candidatos que tiveram as inscrições deferidas/indeferidas para o processo seletivo no site vestibularfatec.com.br</li>
+              <li><strong>22/12/2021, a partir das 15h</strong><br>
+              Divulgação da análise dos recursos e das retificações de notas/documentos no site vestibularfatec.com.br</li>
+              <li><strong>12/01/2022, a partir das 15h</strong><br>
+              Disponibilização no site vestibularfatec.com.br da lista de classificação geral e da 1ª lista de convocação dos candidatos</li>
+              <li><strong>De 13/01 até 14/01/2022</strong><br>
+              Matrícula da 1ª chamada e envio de documentação de matrícula por meio digital, via upload, pelos candidatos (Matrícula remota SIGA)</li>
+              <li><strong>18/01/2022, a partir das 15h</strong><br>
+              Divulgação da lista de deferimento e indeferimento das matrículas da 1ª chamada (Matrícula remota SIGA)</li>
+              <li><strong>De 19/01 até 20/01/2022</strong><br>
+              Prazo para acerto de documentação da matrícula 1ª chamada (Matrícula Remota SIGA)</li>
+              <li><strong>24/01/2022, a partir das 15h</strong><br>
+              Divulgação de matrículas deferidas e indeferidas 1ª chamada (Matrícula remota SIGA)</li>
+              <li><strong>31/01/2022, a partir das 15h</strong><br>
+              Divulgação da 2ª chamada pelo site vestibularfatec.com.br e convocação para envio dos documentos de matrícula da 2ª chamada (Matrícula remota SIGA)</li>
+              <li><strong>01/02/2022</strong><br>
+              Matrícula da 2ª chamada e envio de documentação de matrícula por meio digital, via upload, pelos candidatos (Matrícula remota SiGA)</li>
+              <li><strong>03/02/2022, a partir das 15h</strong><br>
+              Divulgação da lista de deferimento e indeferimento das matrículas da 2ª chamada (Matrícula Remota SIGA)</li>
+              <li><strong>04/02/2022</strong><br>
+              Prazo para acerto de documentação de matrícula da 2ª chamada (Matrícula Remota SIGA)</li>
+              <li><strong>08/02/2022, a partir das 15h</strong><br>
+              Divulgação das matrículas deferidas e indeferidas 2ª chamada após acerto de documentação (Matrícula remota SIGA)</li>
+            </ul>
+            <p><strong>Valor da taxa de inscrição</strong><br>
+              R$ 39,00 (trinta e nove reais)</p>
+          </div>          
+        </div>
+      </div>
+      <div class="py-4">
+        <a class="shadow-md py-4 px-6 rounded-md transition duration-300 bg-appcolor-blue text-white hover:bg-appcolor-white hover:text-appcolor-blue text-center tracking-wide text-xl block" href="">Inscrições, isenção/redução e outras informações do vestibular aqui</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- <section class="my-5 py-5">
+  <div class="container">
+    <div class="flex flex-col-reverse lg:flex-row items-center"> 
+      <div class="">
+        <img src="img/vectors/undraw_exams_g-4-ow.svg" alt="" srcset="">
+        <img src="img/vestibular.jpeg" alt="">
+      </div>       
+      
+      <div class="w-full">
+        <div class="">
+          <h1 class="text-appcolor-blue font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">Vestibular Fatec</h1>
+          <p class="font-semibold text-appcolor-red text-center lg:text-right md:text-2xl mt-0 mb-4 uppercase">Ensino Superior Gratuito!</p>
+        </div>
+        <div class="hidden md:block">
+          <div class="px-8 text-justify max-h-96 overflow-y-scroll">
+            <p class="text-center text-xl py-4">Encontre aqui a programação para o Processo Seletivo Vestibular 1º SEM/22.</p>
+            <ul class="list-disc list-inside">
+              <li><strong>De 21/10 até as 15h do dia 26/10/2021</strong><br>
+              Inscrições para isenção/redução da taxa de inscrição e envio por meio digital da documentação comprobatória, via upload, no site vestibularfatec.com.br</li>
+              <li><strong>De 27/10 até as 15h do dia 01/12/2021</strong><br>
+              Inscrições para o Processo Seletivo no site vestibularfatec.com.br e envio por meio digital, via upload, da documentação comprobatória - Valor da taxa R$ 39,00</li>
+              <li><strong>De 19/11 até as 15h do dia 01/12/2021</strong><br>
+              Inscrição para o candidato beneficiado com a isenção/redução da taxa de inscrição no site vestibularfatec.com.br</li>
+              <li><strong>19/11/2021, a partir das 15h</strong><br>
+              Divulgação do resultado da análise dos pedidos de isenção/redução de taxa no site vestibularfatec.com.br</li>
+              <li><strong>De 22/11 até 23/11/2021</strong><br>
+              Prazo para interposição de recurso para os candidatos que tiveram o pedido de isenção e redução da taxa de inscrição indeferido no site vestibularfatec.com.br</li>
+              <li><strong>29/11/2021, a partir das 15h</strong><br>
+              Divulgação da análise dos recursos de isenção/redução da taxa de inscrição no site vestibularfatec.com.br</li>
+              <li><strong>15/12/2021, a partir das 15h</strong><br>
+              Divulgação da lista preliminar das inscrições deferidas e indeferidas para o processo seletivo no site vestibularfatec.com.br</li>
+              <li><strong>De 16/12 até 17/12/2021</strong><br>
+              Período para interposição de recurso e retificação das notas e documentação dos candidatos que tiveram as inscrições deferidas/indeferidas para o processo seletivo no site vestibularfatec.com.br</li>
+              <li><strong>22/12/2021, a partir das 15h</strong><br>
+              Divulgação da análise dos recursos e das retificações de notas/documentos no site vestibularfatec.com.br</li>
+              <li><strong>12/01/2022, a partir das 15h</strong><br>
+              Disponibilização no site vestibularfatec.com.br da lista de classificação geral e da 1ª lista de convocação dos candidatos</li>
+              <li><strong>De 13/01 até 14/01/2022</strong><br>
+              Matrícula da 1ª chamada e envio de documentação de matrícula por meio digital, via upload, pelos candidatos (Matrícula remota SIGA)</li>
+              <li><strong>18/01/2022, a partir das 15h</strong><br>
+              Divulgação da lista de deferimento e indeferimento das matrículas da 1ª chamada (Matrícula remota SIGA)</li>
+              <li><strong>De 19/01 até 20/01/2022</strong><br>
+              Prazo para acerto de documentação da matrícula 1ª chamada (Matrícula Remota SIGA)</li>
+              <li><strong>24/01/2022, a partir das 15h</strong><br>
+              Divulgação de matrículas deferidas e indeferidas 1ª chamada (Matrícula remota SIGA)</li>
+              <li><strong>31/01/2022, a partir das 15h</strong><br>
+              Divulgação da 2ª chamada pelo site vestibularfatec.com.br e convocação para envio dos documentos de matrícula da 2ª chamada (Matrícula remota SIGA)</li>
+              <li><strong>01/02/2022</strong><br>
+              Matrícula da 2ª chamada e envio de documentação de matrícula por meio digital, via upload, pelos candidatos (Matrícula remota SiGA)</li>
+              <li><strong>03/02/2022, a partir das 15h</strong><br>
+              Divulgação da lista de deferimento e indeferimento das matrículas da 2ª chamada (Matrícula Remota SIGA)</li>
+              <li><strong>04/02/2022</strong><br>
+              Prazo para acerto de documentação de matrícula da 2ª chamada (Matrícula Remota SIGA)</li>
+              <li><strong>08/02/2022, a partir das 15h</strong><br>
+              Divulgação das matrículas deferidas e indeferidas 2ª chamada após acerto de documentação (Matrícula remota SIGA)</li>
+            </ul>
+            <p><strong>Valor da taxa de inscrição</strong><br>
+              R$ 39,00 (trinta e nove reais)</p>
+          </div>          
+        </div>
+        <div class="py-10 px-8">
+          <a class="shadow-md py-4 px-6 rounded-md transition duration-300 bg-appcolor-blue text-white hover:bg-appcolor-white hover:text-appcolor-blue text-center tracking-wide text-xl block" href="">Inscreva-se</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+  <main class="container bg-gray-100">
+
+    <!-- <section class="max-w-screen-md">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://www.youtube.com/embed/r9jwGansp1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section> -->
+    <!-- <div class="max-w-screen-sm">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe  src="https://www.youtube.com/embed/Pq51BE4GF-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- Hero Why Tecnologo -->
+    <!-- <section class="">
+      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+        
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-appcolor-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6">Quem quer ser um tecnólogo</h2>
+          <p class="text-appcolor-gray-100 text-lg text-center lg:text-left mb-6">Curso técnico e tecnólogo, você sabe a diferença entre eles? Muita gente ainda confunde essas duas modalidades de ensino, inclusive as empresas. Marcelo Tas te explica as vantagens e as diferenças de cada um deles para te ajudar a escolher qual curso fazer.</p>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe  src="https://www.youtube.com/embed/Pq51BE4GF-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>        
+      </div>
+    </section> -->
+
+    
+
+    <section class="">
+      <div class="flex flex-col justify-center items-center bg-white mx-auto rounded-md my-10 p-16 shadow-md text-center">
+        <h1 class="text-2xl font-medium">Responsive Navbar with TailwindCSS</h1>
+        <p>https://blog.logrocket.com/how-to-build-responsive-navbar-tailwind-css/</p>
+      </div>
+    </section>
+    <section class="mb-16">
+        <div class="max-w-5xl mx-auto text-justify bg-white rounded-lg shadow-md px-6 md:px-8 py-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam esse ratione sit repudiandae est? Consectetur saepe voluptates, distinctio vel repellat ad quas nobis amet illo, voluptatibus itaque pariatur aut!</p>
+          <p>Tempora quaerat officiis officia voluptatibus saepe odit, rem a libero cum hic perferendis nisi exercitationem architecto ab quod impedit ut. Itaque laudantium minus quos fugiat, a totam. Optio, voluptatum consectetur?</p>
+          <p>Eos eveniet incidunt inventore placeat cum quas laboriosam corrupti nihil pariatur quam odit laborum quod necessitatibus enim cupiditate ducimus distinctio, labore dicta temporibus maiores error earum! Eos cupiditate fuga perspiciatis.</p>
+          <p>Quisquam provident nesciunt aut illum atque soluta. Atque, cum voluptatibus totam sint illo, commodi cumque modi repudiandae, fugit aliquid tempora unde fuga ipsa labore odio itaque dolorem maiores fugiat praesentium?</p>
+          <p>Illum tempore, velit commodi nostrum maiores neque, eum impedit officia molestias doloribus harum modi. Eaque, iste! Et nulla tempora accusantium. Sunt quam dignissimos quia nostrum sint dicta ut tempora tenetur.</p>
+          <p>Et quas temporibus esse dicta earum soluta rem beatae eveniet provident in asperiores placeat maiores doloribus ea cumque magnam, veritatis tempore sed unde libero commodi minima est dolorem? Culpa, voluptatem?</p>
+          <p>Nobis reiciendis neque cumque omnis distinctio nulla, earum magni sunt laborum quaerat quae recusandae? Quo odio dolorem nam aliquid asperiores aut ab vero. Minus recusandae tenetur, officiis molestias qui autem!</p>
+          <p>Dolor quisquam, a quae rem cumque voluptatum molestiae omnis hic totam necessitatibus veniam placeat ut nemo laudantium magni explicabo officia magnam perferendis labore suscipit! Quisquam ipsa ullam ab saepe blanditiis!</p>
+          <p>Iusto excepturi voluptatum amet ad eveniet. Recusandae quia maiores provident ducimus fuga nam dignissimos iusto voluptatibus facilis possimus sint, consequatur saepe molestiae accusamus laborum voluptate vero velit in! Perferendis, aperiam.</p>
+          <p>Harum sint laborum asperiores perferendis, autem facilis eius cupiditate tenetur id, repellat, magni quia mollitia at! Facere corporis numquam rerum ducimus voluptatum nostrum magni vel cum blanditiis, ab non facilis?</p>
+          <p>Nostrum eum error quis maxime itaque a, maiores ipsam iste sapiente delectus, quisquam perferendis dolores suscipit esse corrupti facilis rerum sint deserunt ad id mollitia ipsa aliquid! Sint, labore nam?</p>
+          <p>Omnis consequatur laborum fugiat sapiente? Saepe, molestiae magnam? Deleniti cumque veritatis saepe tenetur architecto possimus, earum fugit iste sequi aspernatur alias autem, corrupti repellat accusantium amet quas repudiandae molestiae aperiam.</p>
+          <p>A, quo! Facilis, dignissimos provident eius porro ratione modi vel totam possimus laboriosam fuga alias, quam voluptatem tempore obcaecati necessitatibus quas nihil eum similique dolorum velit animi. Reiciendis, ex vel?</p>
+          <p>Laborum doloribus suscipit cum repudiandae quisquam voluptas, aliquam amet officia earum saepe quas laudantium, pariatur fugit dolores voluptate consequuntur, sed ex totam. Necessitatibus itaque neque culpa labore tempora mollitia aperiam.</p>
+          <p>Maiores accusantium quod cumque vitae cupiditate mollitia atque dolores in inventore asperiores aliquid, sed consequatur expedita modi repudiandae nemo architecto illo, at alias unde reiciendis. Sequi quaerat enim nisi sapiente.</p>
+          <p>Nulla rerum sequi sit beatae alias maiores! Ad ratione beatae minus modi consequuntur nam eaque fugiat amet voluptates! Quas tempore fugiat neque aliquid ipsum voluptatum cupiditate exercitationem, assumenda eum quisquam?</p>
+          <p>Impedit nobis error maxime sequi mollitia sit ad doloremque libero nihil, accusamus dicta natus, laborum magni harum voluptatem veniam explicabo sapiente obcaecati! Ea inventore amet quasi fugit fuga esse nam.</p>
+          <p>Magni nobis inventore quis cupiditate adipisci tenetur tempore vitae quas necessitatibus? Beatae in magnam, illo quos placeat sequi itaque facilis vero et animi quisquam eaque culpa aliquid autem cum dolore.</p>
+          <p>Dolorem reprehenderit accusantium rem eveniet nobis repudiandae dignissimos. Molestias possimus cupiditate maxime neque repudiandae? Ab possimus sint quia. Omnis adipisci quae eligendi magni. Dolor iusto sed reiciendis atque excepturi deserunt!</p>
+                                      
+        </div>
+    </section>
+    </main>
+
+    <footer>
+      <a href="https://br.freepik.com/vetores/pessoas">Pessoas vetor criado por stories - br.freepik.com</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      const button = document.querySelector('#menu-button') // Hamburger Icon
+      const menu = document.querySelector('#menu') // Menu
+      const logo = document.querySelector('#logo-navbar')
+
+      button.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+      });
+
+      const onScrollHandler = function() {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop          
+        let widthScreen = window.screen.width
+        
+        if((widthScreen <= 425) || scrollTop > 95) {            
+          logo.classList.remove('hidden')            
+        } else {
+          logo.classList.add('hidden')            
+        }
+      }
+      
+      window.addEventListener("load", onScrollHandler)
+      window.addEventListener("resize", onScrollHandler)
+      window.addEventListener("scroll", onScrollHandler)
+    </script>
+</body>
+</html>
