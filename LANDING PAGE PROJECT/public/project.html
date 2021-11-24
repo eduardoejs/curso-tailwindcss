@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F130</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="antialiased font-Nunito">
+
+    <!-- Navbar top -->
+    <header class="sticky top-0 bg-white shadow-md z-10">
+        <nav class="container flex flex-wrap items-center justify-between w-full py-2 lg:py-0 px-4">
+            <!-- Brand icon -->
+            <div><img id="logo-navbar" src="img/logo-fatec-90x32.png" alt="Logotipo Fatec"></div>
+
+            <!-- Hamburger icon -->
+            <svg xmlns="<http://www.w3.org/2000/svg>"
+                id="menu-button"
+                class="h-10 w-10 cursor-pointer lg:hidden block" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+
+            <!-- Menu items -->
+            <div id="menu" class="hidden w-full lg:flex lg:items-center lg:w-auto">
+                <ul class="mt-4 lg:mt-0 lg:flex lg:justify-between">
+                    <li class="lg:p-4">
+                        <a href="">A Fatec</a>
+                    </li>
+                    <li class="py-2 block lg:p-4">
+                        <a href="">Cursos</a>
+                    </li>
+                    <li class="py-2 block lg:p-4">
+                      <a href="">Aluno</a>
+                    </li>
+                    <li class="py-2 block lg:p-4">
+                        <a href="">Notícias</a>
+                    </li>
+                    <li class="py-2 block lg:p-4">
+                        <a href="">Publicações</a>
+                    </li>
+                    <li class="py-2 block lg:p-4">
+                        <a href="">Vestibular</a>
+                    </li>
+                    <li class="py-2 block lg:p-4">
+                      <a href="">Área Exclusiva</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="text-4xl lg:text-6xl mt-4 mb-1 lg:mt-0 lg:mb-16 text-center">
+                <p class="capitalize">Find a place</p> 
+                <p class="capitalize">You'll love to live</p>
+            </div> -->
+            <!-- <div class="flex flex-col gap-4 lg:flex-row justify-center py-4">
+                <div class="flex px-20 lg:border-r-2">
+                    <div class="px-2 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-bold text-lg">Location</p>
+                        <p class="text-gray-400">Enter your city name</p>
+                    </div>
+                </div>
+                <div class="flex px-20 lg:border-r-2">
+                    <div class="px-2 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-bold text-lg">Type</p>
+                        <p class="text-gray-400">Urban & Minimalist</p>
+                    </div>
+                </div>
+                <div class="flex px-20">
+                    <div class="px-2 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-bold text-lg">Range</p>
+                        <p class="text-gray-400">$14,000 - $20,000</p>
+                    </div>
+                </div>
+            </div> -->
+    
+    <!-- Hero -->
+    <section class="container relative">
+      <div class="h-full bg-gray-100 py-6 flex flex-col justify-center rounded-md sm:py-12 bg-cover bg-no-repeat bg-globe">
+        <div class="relative p-3 sm:max-w-7xl sm:mx-auto">
+          <div class="relative px-4 py-4 bg-gray-500 shadow-lg rounded-3xl sm:p-10 bg-clip-padding bg-opacity-20 backdrop-filter backdrop-blur-xl">
+            <div class="divide-y divide-gray-300">
+              <div class="py-8 text-base leading-6 space-y-4 text-appcolor-white sm:text-lg sm:leading-7">
+                <p class="font-Carter text-3xl text-center lg:text-right md:text-5xl">Faça parte dessa equipe campeã!</p>                 
+                <p class="text-center lg:text-right md:py-4">Desde 2006, a Faculdade de Tecnologia "Estudante Rafael Almeida Camarinha" tem se empenhado em qualificar seus alunos, tornando-os profissionais competentes e éticos, capazes de enfrentar desafios na busca do desenvolvimento tecnológico, social e econômico.</p>
+                <p class="font-Carter text-center text-xl lg:text-right tracking-widest">Não fique de fora!</p>
+              
+              </div>
+              <div class="pt-6 text-base leading-6 sm:text-lg sm:leading-7 text-appcolor-white">
+                <div class="flex flex-col-reverse items-center md:flex-row md:justify-between">
+                    <div>
+                        <p class="font-bold lg:text-xl">Quer saber como?</p>
+                        <p class="flex items-center mt-2">
+                            <a href="https://www.vestibularfatec.com.br" target="_blank" class="flex items-end shadow-md py-2 px-4 rounded-md transition duration-300 bg-appcolor-white text-appcolor-blue hover:bg-appcolor-blue-light hover:text-appcolor-white text-sm"> Acompanhe o nosso Vestibular                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                  </svg>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mb-4 md:mb-0">
+                        <div class="flex items-center">
+                            <div class="p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="p-1 ">
+                                Ensino <span class="uppercase font-semibold tracking-wide">SUPERIOR GRATUITO</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                            </div>
+                            <div class="p-1">
+                                Ensino de <span class="uppercase font-semibold tracking-wide">QUALIDADE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="absolute bottom-1 right-6 text-xs text-gray-500">
+        <a href="https://br.freepik.com/fotos/fundo">Fundo foto criado por natanaelginting - br.freepik.com</a>
+      </div>    
+    </section> 
+
+    <!-- Atalhos -->
+    <section class="bg-appcolor-white mt-10 py-10 ">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 rounded-md">
+                <div class="bg-white hover:bg-gray-100 flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">SIGA Alunos</div>
+                </div>
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">SIGA Docentes</div>
+                </div>
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">E-mail Institucional</div>
+                </div>
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">Parceria Microsoft</div>
+                </div>
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">BiblioCPS</div>
+                </div>
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">Estágio Supervisionado</div>
+                </div>                
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">Tecnólogos em Foco</div>
+                </div>                
+                <div class="bg-white flex justify-around items-center rounded-lg shadow-md p-4 text-appcolor-gray">
+                    <div class="flex-grow-0 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                    </div>
+                    <div class="flex flex-1 md:justify-center">Revista Alimentus</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quadro de avisos -->
+    <section>
+        <div class="container my-5 py-5 space-y-5">            
+            <!-- #1 -->
+            <div class="flex">      
+                <div class="flex items-center px-1 rounded-l-md bg-yellow-400 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                </div>  
+                <div class="w-full rounded-r-md p-4 bg-appcolor-gold shadow-md">
+                    <div class="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4">
+                        <h2 class="font-semibold uppercase text-appcolor-gray">Canais de Atendimento</h2>          
+                        <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">Confira os canais de atendimento durante a pandemia</p>
+                        <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+                    </div>
+                </div>
+            </div> 
+            <!-- #2 -->
+            <div class="flex">
+                <div class="flex items-center px-1 rounded-l-md bg-yellow-400 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                </div>
+                <div class="w-full rounded-r-md p-4 bg-appcolor-gold shadow-md">
+                    <div class="flex flex-col md:flex-row md:justify-start md:items-center md:space-x-4">
+                        <h2 class="font-semibold uppercase text-appcolor-gray">Canal de Dúvida</h2>          
+                        <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">O Centro Paula Souza disponibilizou um canal para solucionar as dúvidas referentes às aulas remotas.</p>
+                        <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </section>
+
+    <!-- TAS -->
+    <section class="my-5 py-5">
+        <div class="container grid grid-cols-1 lg:grid-cols-2">
+            <div class="flex flex-1 flex-col items-center lg:items-start lg:gap-10">
+                <h2 class="text-appcolor-blue font-bold text-3xl md:text-5xl lg:text-6xl text-center lg:text-left mb-6 lg:mt-14">Quem quer ser um tecnólogo?</h2>
+                <p class="text-appcolor-gray-100 text-center lg:text-left mb-10 lg:pr-10">Curso técnico e tecnólogo, você sabe a diferença entre eles? Muita gente ainda confunde essas duas modalidades de ensino, inclusive as empresas. Marcelo Tas te explica as vantagens e as diferenças de cada um deles para te ajudar a escolher qual curso fazer.</p>
+            </div>
+        
+            <div class="aspect-w-16 aspect-h-9 md:aspect-w-8 md:aspect-h-3">
+                <iframe class="rounded-md" src="https://www.youtube.com/embed/Pq51BE4GF-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>        
+        </div>
+    </section>
+
+    <!-- Vestibular -->
+    <section>
+        <div class="container flex flex-col lg:flex-row items-center gap-12 mt-10">
+                      
+            <!-- Banner -->
+            <!-- <div class="aspect-w-2 aspect-h-2">          
+                <img  src="img/vestibular.jpeg" alt="">
+            </div> -->
+            <!-- <div>
+                <img src="img/vectors/undraw_exams_g-4-ow.svg" alt="" srcset="">          
+            </div> -->
+            <div class="flex flex-1 justify-center">
+                <img src="img/vestibular.jpeg" alt="" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full">
+            </div>
+
+             <!-- Content -->
+             <div class="flex flex-1 flex-col items-center lg:items-start">
+                <p class="text-appcolor-blue text-3xl md:text-5xl lg:text-6xl mb-6 font-bold">Vestibular Fatec</p>
+                <p class="text-appcolor-red text-center lg:text-right md:text-2xl mt-0 mb-4 font-semibold">Ensino Superior Gratuito!</p>
+                <div class="text-appcolor-gray-100 text-justify lg:text-left mb-6 leading-7">
+                    <p class="py-4">Informações sobre o Processo Seletivo Vestibular 1º SEM/22.</p>
+                    <p>Inscrição, isenção ou redução da taxa de inscrição, provas anteriores e outras informações você encontra em <a class="underline hover:no-underline" href="http://www.vestibularfatec.com.br" target="_blank">www.vestibularfatec.com.br</a></p>
+                    <p><span class="font-semibold">De 27/10 até as 15h do dia 01/12/2021</span>
+                        Inscrições para o Processo Seletivo no site <a class="underline hover:no-underline" href="http://www.vestibularfatec.com.br" target="_blank">www.vestibularfatec.com.br</a> e envio por meio digital, via upload, da documentação comprobatória - <span class="font-semibold">Valor da taxa R$ 39,00</span></p>
+                    <p>Cursos oferecidos pela Fatec Marília:</p>
+                    <ul class=" list-inside list-disc">
+                        <li>Tecnologia em Alimentos (Manhã e Noite)</li>
+                        <li>Gestão Comercial (Noite)</li>
+                        <li>Gestão Empresarial (EaD)</li>
+                    </ul>
+                    <!-- Arquivos -->
+                    <div class="rounded-md bg-gray-100 text-appcolor-gray my-4">
+                        <div class="flex justify-between">
+                            <p class="flex-1 px-4 py-2 text-base">1ª Chamada Vestibular.pdf</p>
+                            <div class="flex items-center justify-center space-x-1 rounded-r-md bg-gray-200 p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                                <p class="text-sm">Download</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center flex-wrap gap-6">
+                    <button type="button" class="btn btn-blue hover:bg-appcolor-white hover:text-black">www.vestibularfatec.com.br</button>                    
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    
+    
+    <!-- Main content -->
+    <main>
+        
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        const button = document.querySelector('#menu-button') // Hamburger Icon
+        const menu = document.querySelector('#menu') // Menu
+        const logo = document.querySelector('#logo-navbar')
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
