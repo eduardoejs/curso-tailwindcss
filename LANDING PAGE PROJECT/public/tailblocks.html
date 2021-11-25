@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F130 Tailblocks</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="antialiased font-Poppins bg-appcolor-white">
+
+  <!-- Header menu -->
+  <header class="text-appcolor-gray sticky top-0 bg-appcolor-white z-10 shadow-md">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex font-medium items-center text-appcolor-blue mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Fatec Marília</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-appcolor-blue">First Link</a>
+        <a class="mr-5 hover:text-appcolor-blue">Second Link</a>
+        <a class="mr-5 hover:text-appcolor-blue">Third Link</a>
+        <a class="mr-5 hover:text-appcolor-blue">Fourth Link</a>
+      </nav>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500" href="https://www.facebook.com/oficialfatecmarilia">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-gray-400"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.youtube.com/user/fatecmarilia">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-gray-400" viewBox="0 0 24 24">
+            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+          </svg>           
+        </a>
+        <a class="ml-3 text-gray-500" href="">            
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-gray-400"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.instagram.com/fatec_marilia/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5 hover:text-gray-400" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/fatecmarilia">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="0" class="w-5 h-5 hover:text-gray-400" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span> 
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-appcolor-gray mb-10">
+    <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center bg-white shadow-md rounded-md mt-4">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center">
+        <h1 class="text-3xl sm:text-5xl mb-4 text-appcolor-blue font-Carter">Faça parte dessa equipe campeã!
+          <br class="hidden lg:inline-block">Não fique de fora!
+        </h1>
+        <p class="mb-8 leading-relaxed">Desde 2006, a Faculdade de Tecnologia "Estudante Rafael Almeida Camarinha" tem
+          se empenhado em qualificar seus alunos, tornando-os profissionais competentes e éticos, capazes de enfrentar
+          desafios na busca do desenvolvimento tecnológico, social e econômico.</p>
+        <p class="mb-2 leading-relaxed">Quer saber como fazer parte desse time?</p>
+        <!-- Acesso vestibular -->
+        <div class="flex justify-center mb-4">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 ring-2 ring-offset-2 ring-indigo-500 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Acompanhe
+            nosso Vestibular</button>
+          <button
+            class="hidden ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        </div>
+        <!-- Diferenciais -->
+        <div class=" flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 mb-0 bg-blue-50 p-4 rounded-md">
+          <div class="flex items-center">
+            <div class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="">
+              Ensino <span class="uppercase font-Carter tracking-wide text-appcolor-blue">SUPERIOR GRATUITO</span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="">
+              Ensino de <span class="uppercase font-Carter tracking-wide text-appcolor-blue">QUALIDADE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <!-- <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> -->
+        <img class="object-cover object-center rounded" alt="hero" src="img/vectors/undraw_winners_ao-2-o.svg">
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="bg-indigo-700 p-4 h-screen flex items-center justify-center">
+        <div class="flex-1 p-4 rounded shadow-xl max-w-3xl bg-indigo-600 sm:p-8">
+            <div class="aspect-w-16 aspect-h-9 mb-10">
+                <iframe src="https://www.youtube.com/embed/Pq51BE4GF-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>     -->
+
+  <!-- Quem quer ser tecnologo -->
+  <section class="text-appcolor-gray">
+    <div class="container flex items-center justify-center">
+      <div class="flex-1 max-w-3xl">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="rounded-lg" src="https://www.youtube.com/embed/Pq51BE4GF-w" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto flex px-5 pt-14 items-center justify-center flex-col">
+      <!-- <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> -->
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl mb-4 font-Carter text-appcolor-blue">Quem quer ser um tecnólogo?</h1>
+        <p class="mb-8 leading-relaxed">Curso técnico e tecnólogo, você sabe a diferença entre eles? Muita gente ainda
+          confunde essas duas modalidades de ensino, inclusive as empresas. Marcelo Tas te explica as vantagens e as
+          diferenças de cada um deles para te ajudar a escolher qual curso fazer.</p>
+        <div class="hidden flex justify-center">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+          <button
+            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vestibular -->
+  <section class="text-appcolor-gray">
+    <div class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center bg-white rounded-md shadow-md mb-4">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col flex-wrap md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl mb-4 font-Carter text-appcolor-blue">Vestibular Fatec
+          <br class="hidden lg:inline-block">Ensino Superior Gratuito!
+        </h1>
+        <div class="mb-8 leading-relaxed text-justify md:text-left tracking-wide">
+          <p class="font-semibold ">Informações sobre o Processo Seletivo Vestibular 1º SEM/22.</p>
+          <p>Inscrição, isenção ou redução da taxa de inscrição, provas anteriores e outras informações você encontra em
+            <a class="underline hover:no-underline" href="http://www.vestibularfatec.com.br"
+              target="_blank">www.vestibularfatec.com.br</a></p>
+          <p>
+            <span class="font-semibold">De 27/10 até as 15h do dia 01/12/2021</span>
+            Inscrições para o Processo Seletivo no site <a class="underline hover:no-underline"
+              href="http://www.vestibularfatec.com.br" target="_blank">www.vestibularfatec.com.br</a> e envio por meio
+            digital, via upload, da documentação comprobatória -
+            <span class="font-semibold">Valor da taxa R$ 39,00</span>
+          </p>
+          <p>Cursos oferecidos pela Fatec Marília:</p>
+          <ul class="list-inside list-disc">
+            <li>Tecnologia em Alimentos (Manhã e Noite)</li>
+            <li>Gestão Comercial (Noite)</li>
+            <li>Gestão Empresarial (EaD)</li>
+          </ul>
+
+          <!-- Arquivos para download -->
+          <div class="flex flex-col gap-0">
+            <div class="rounded-md bg-blue-50 border-2 border-blue-200 text-appcolor-blue my-2 text-sm">
+              <div class="flex flex-wrap lg:flex-nowrap items-center justify-start md:justify-between">
+                <p class="p-4 text-appcolor-blue text-left">2ª Chamada Vestibular adsasdasçdmaskjdasjd sadasd´pasdopásdoa´spdoa
+                  ´spdo as´dasod aspod.pdf</p>
+                <div class="p-4">
+                  <a href="#" target="_blank"
+                    class="flex items-end py-2 px-4 ring-2 ring-offset-2 rounded-md transition duration-300 bg-blue-100 text-appcolor-blue focus:outline-none hover:bg-indigo-600 hover:text-blue-300 text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-md bg-blue-50 border-2 border-blue-200 text-appcolor-blue my-2 text-sm">
+              <div class="flex flex-wrap lg:flex-nowrap items-center justify-start md:justify-between">
+                <p class="p-4 text-appcolor-blue text-left">2ª Chamada Vestibular adsasdasçdmaskjdasjd sadasd´pasdopásdoa´spdoa
+                  ´spdo as´dasod aspod.pdf</p>
+                <div class="p-4 text-sm">
+                  <a href="#" target="_blank"
+                    class="flex items-end py-2 px-4 ring-2 ring-offset-2 rounded-md transition duration-300 bg-blue-100 text-appcolor-blue focus:outline-none hover:bg-indigo-600 hover:text-blue-300 text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 ring-2 ring-offset-2 ring-indigo-500 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">www.vestibularfatec.com.br</button>
+          <button
+            class="hidden ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="img/vestibular.jpeg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section class="text-appcolor-gray bg-appcolor-white">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center -mb-20">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-Carter text-appcolor-blue mb-4">Notícias - Fatec Marília</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Fique por dentro das notícias que
+          a Fatec fez parte ou tem a oferecer à você.</p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-appcolor-gray overflow-hidden pb-24">
+      <div class="container px-5 py-4 mx-auto">
+        <div class="-my-8 divide-y-2 divide-gray-200">
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold text-gray-700 uppercase">Notícias</span>
+              <span class="mt-1 text-gray-500 text-sm flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+              </svg> 12 Jun 2019</span>
+            </div>
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-appcolor-blue mb-2">WebSAI 2021</h2>
+              <p class="leading-relaxed">Atenção caros alunos da Fatec Marília.!!! Leia com atenção o recado importante
+                abaixo. Informamos que os questionários para a Pesquisa WebSAI 2021 ficarão disponíveis até o dia
+                06/10/2021. O acesso de todos os usuários continua da mesma forma, por meio da utilização do número do
+                CPF como login e a senha já cadastrada no sistema, pelo link a seguir: https://websa ...</p>
+              <a class="text-indigo-500 inline-flex items-center mt-4">Leia mais
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold text-gray-700 uppercase">Notícias</span>
+              <span class="mt-1 text-gray-500 text-sm flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+              </svg> 12 Jun 2019</span>
+            </div>
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-appcolor-blue mb-2">Programa Agente Local de Inovação (ALI)</h2>
+              <p class="leading-relaxed">O agente local de inovação é um bolsista selecionado e capacitado pelo
+                SEBRAE-SP, com o principal objetivo de ser um facilitador da gestão da inovação nos pequenos negócios,
+                identificando necessidades e buscando soluções de acordo com as demandas de cada empresa. A bolsa é de
+                R$ 2.000,00 (no período de capacitação – OUT/2020) e R$ 4.000,00 (durante 24 meses).</p>
+              <a class="text-indigo-500 inline-flex items-center mt-4">Leia mais
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold text-gray-700 uppercase">Notícias</span>
+              <span class="mt-1 text-gray-500 text-sm flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+              </svg> 12 Jun 2019</span>
+            </div>
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-appcolor-blue mb-2">Intercâmbio Ibero-Americanas</h2>
+              <p class="leading-relaxed">Atenção alunos da Fatec! Conheça o programa que oferecerá bolsas de estudos
+                para 2021! Sabia mais. http://arinter.cps.sp.gov.br/editais-abertos.</p>
+              <a class="text-indigo-500 inline-flex items-center mt-4">Leia mais
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Publicacoes -->
+  <section class="text-appcolor-gray pb-24">
+    <div class="container px-5 py-24 mx-auto bg-white rounded-md shadow-md">
+      <div class="text-center mb-20">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-Carter text-appcolor-blue mb-4">Publicações</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Acompanhe nossas publicações
+          destinadas à comunidade acadêmica</p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="divide-y-2 divide-gray-100">
+        <div class="text-appcolor-gray">
+          <div class="container px-5 py-10 mx-auto flex flex-wrap">
+            <h2 class="sm:text-3xl text-2xl text-appcolor-blue font-medium mb-2 md:w-2/5">Revista Alimentus - ISSN 2236-4684</h2>
+            <div class="md:w-3/5 md:pl-6">
+              <p class="leading-relaxed text-base">A Revista Alimentus - Ciências e Tecnologias é um veículo de divulgação
+                científica eletrônica da Faculdade de Tecnologia “Estudante Rafael Almeida Camarinha” (Fatec Marília) que
+                tem por objetivo publicar estudos da comunidade, nacional e internacional, de professores, pesquisadores,
+                estudantes de graduação e pós-graduação e profissionais da área de alimentos dos setores público e privado.
+              </p>
+              <div class="flex md:mt-4 mt-6">
+                <button
+                  class="hidden inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+                <a class="text-indigo-500 inline-flex items-center ml-4">Ver edições
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-appcolor-gray">
+          <div class="container px-5 py-10 mx-auto flex flex-wrap">
+            <h2 class="sm:text-3xl text-2xl text-appcolor-blue font-medium mb-2 md:w-2/5">Tecnólogos em Foco</h2>
+            <div class="md:w-3/5 md:pl-6">
+              <p class="leading-relaxed text-base">Tecnólogos em Foco é o informativo da FATEC de Marília que tem como
+                objetivo a divulgação de algumas das várias atividades acadêmicas desenvolvidas pelos professores, alunos e
+                administração.</p>
+              <div class="flex md:mt-4 mt-6">
+                <button
+                  class="hidden inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+                <a class="text-indigo-500 inline-flex items-center ml-4">Ver edições
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="text-appcolor-gray bg-appcolor-blue">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center md:text-left">
+        <div>
+          <h2 class="font-bold text-gray-200 tracking-widest text-sm mb-3">DOCENTES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-gray-200 tracking-widest text-sm mb-3">ALUNOS</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-400 hover:text-gray-200">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-gray-200">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-gray-200">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-gray-200">Fourth Link</a>
+              </li>
+            </nav>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-gray-200">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-gray-200 tracking-widest text-sm mb-3 uppercase">Fatec Marília</h2>
+          <div class="">
+            <div class="">
+              <p class="leading-7 text-xs text-gray-200">Faculdade de Tecnologia "Estudante Rafael Almeida Camarinha"</p> 
+              <div class="text-gray-200 text-xs flex items-center py-1">
+                <div class="p-1 rounded-md bg-gray-700 mr-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827  0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div> 
+                <p class="">Av. Castro Alves, 62 - Somenzari - Marília/SP - 17.506-000</p>
+              </div>                             
+              <div class="text-gray-200 text-xs flex items-center py-1">
+                <div class="p-1 rounded-md bg-gray-700 mr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg> 
+                </div>
+
+                <p class="">(14) 3454-7540</p>
+              </div>
+              <div class="text-gray-200 text-xs flex items-center py-1">
+                <div class="p-1 rounded-md bg-gray-700 mr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                </svg>
+              </div>
+                <p class="">fatecmarilia@gmail.com</p>
+              </div>
+            </div>            
+          </div>
+          
+        </div>
+      </div>
+   
+    </div>
+    <div class="bg-gray-100">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex font-medium items-center md:justify-start justify-center text-appcolor-blue">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Fatec Marília</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Fatec Marília —
+          <a href="Eduardo J Silva Tecnologia da Informação" rel="noopener noreferrer" class="text-appcolor-gray ml-1"
+            target="_blank">@Eduardo J Silva</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/oficialfatecmarilia">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-gray-400"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://www.youtube.com/user/fatecmarilia">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-gray-400" viewBox="0 0 24 24">
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+            </svg>           
+          </a>
+          <a class="ml-3 text-gray-500" href="">            
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-gray-400"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://www.instagram.com/fatec_marilia/">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5 hover:text-gray-400" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/fatecmarilia">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5 hover:text-gray-400" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>        
+      </div>
+    </div>
+  </footer>
+
+
+  
+</body>
+
+</html>
