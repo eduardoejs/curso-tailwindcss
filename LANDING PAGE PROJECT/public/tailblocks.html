@@ -76,61 +76,59 @@
 
   <!-- Hero -->
   <section class="text-appcolor-gray mb-10">
-    <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center bg-white shadow-md rounded-md mt-4">
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center">
-        <h1 class="text-3xl sm:text-5xl mb-4 text-appcolor-blue font-Carter">Faça parte dessa equipe campeã!
-          <br class="hidden lg:inline-block">Não fique de fora!
+    <div class="container relative mx-auto flex px-5 py-20 md:flex-row flex-col items-center bg-white shadow-md rounded-md">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center">
+        <h1 class="text-3xl sm:text-5xl mb-8 text-appcolor-blue font-Carter">Faça parte dessa equipe campeã!
+          <br class="hidden lg:inline-block"><span class="lg:inline-block lg:mt-2">Não fique de fora!</span>
         </h1>
         <p class="mb-8 leading-relaxed">Desde 2006, a Faculdade de Tecnologia "Estudante Rafael Almeida Camarinha" tem
           se empenhado em qualificar seus alunos, tornando-os profissionais competentes e éticos, capazes de enfrentar
           desafios na busca do desenvolvimento tecnológico, social e econômico.</p>
         <p class="mb-2 leading-relaxed">Quer saber como fazer parte desse time?</p>
-        <!-- Acesso vestibular -->
+        <!-- Botao Acesso vestibular -->
         <div class="flex justify-center mb-4">
-          <button
-            class="inline-flex text-white bg-indigo-500 border-0 ring-2 ring-offset-2 ring-indigo-500 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Acompanhe
+          <button class="inline-flex text-white bg-indigo-500 border-0 ring-2 ring-offset-2 ring-indigo-500 py-2 px-6 focus:outline-none hover:bg-white hover:text-indigo-600 rounded text-lg">Acompanhe
             nosso Vestibular</button>
-          <button
-            class="hidden ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
-        </div>
-        <!-- Diferenciais -->
-        <div class=" flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 mb-0 bg-blue-50 p-4 rounded-md">
-          <div class="flex items-center">
-            <div class="pr-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div class="">
-              Ensino <span class="uppercase font-Carter tracking-wide text-appcolor-blue">SUPERIOR GRATUITO</span>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <div class="pr-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div class="">
-              Ensino de <span class="uppercase font-Carter tracking-wide text-appcolor-blue">QUALIDADE</span>
-            </div>
-          </div>
-        </div>
+          <button class="hidden ml-4 inline-flex text-gray-700 bg-gray-100  border-0 ring-2 ring-offset-2 ring-gray-300 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Conheça nossa história</button>
+        </div>                
       </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-4 md:mb-0">
         <!-- <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> -->
         <img class="object-cover object-center rounded" alt="hero" src="img/vectors/undraw_winners_ao-2-o.svg">
       </div>
+      <div class="absolute inset-x-0 bottom-0 bg-blue-50  rounded-tl-xl rounded-tr-xl mx-10">        
+        <div class="px-10 flex flex-col md:flex-row md:justify-around py-2 text-appcolor-blue">          
+          <div class="flex items-center">
+            <div class="pr-2 py-1 md:py-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="">
+              Ensino <span class="uppercase font-Carter tracking-wide">SUPERIOR GRATUITO</span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="">
+              Ensino de <span class="uppercase font-Carter tracking-wide">qualidade</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
+  
   <!-- <div class="bg-indigo-700 p-4 h-screen flex items-center justify-center">
         <div class="flex-1 p-4 rounded shadow-xl max-w-3xl bg-indigo-600 sm:p-8">
             <div class="aspect-w-16 aspect-h-9 mb-10">
@@ -139,8 +137,47 @@
         </div>
     </div>     -->
 
+  <!-- Quadro de avisos -->
+  <section class="">
+    <div class="container my-5 py-5 space-y-5 bg-white py-20 rounded-md shadow-md mb-24">     
+      <div class="text-center mb-10">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-Carter text-appcolor-blue">Quadro de avisos</h1>        
+      </div>       
+        <!-- #1 -->
+        <div class="flex">      
+            <div class="flex items-center px-1 rounded-l-md bg-yellow-400 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+            </div>  
+            <div class="w-full rounded-r-md p-4 bg-appcolor-gold shadow-md">
+                <div class="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-4">
+                    <h2 class="font-semibold uppercase text-appcolor-gray">Canais de Atendimento</h2>          
+                    <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">Confira os canais de atendimento durante a pandemia</p>
+                    <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+                </div>
+            </div>
+        </div> 
+        <!-- #2 -->
+        <div class="flex">
+            <div class="flex items-center px-1 rounded-l-md bg-yellow-400 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 items-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+            </div>
+            <div class="w-full rounded-r-md p-4 bg-appcolor-gold shadow-md">
+                <div class="flex flex-col md:flex-row md:justify-start md:items-center md:space-x-4">
+                    <h2 class="font-semibold uppercase text-appcolor-gray">Canal de Dúvida</h2>          
+                    <p class="md:flex-1 py-4 md:py-0 text-justify text-appcolor-gray">O Centro Paula Souza disponibilizou um canal para solucionar as dúvidas referentes às aulas remotas.</p>
+                    <a href="" class="btn btn-blue hover:bg-appcolor-white hover:text-appcolor-blue block text-center rounded">Ler aviso</a>          
+                </div>
+            </div>
+        </div>
+    </div>         
+</section>
+
   <!-- Quem quer ser tecnologo -->
-  <section class="text-appcolor-gray">
+  <section class="text-appcolor-gray mb-14">
     <div class="container flex items-center justify-center">
       <div class="flex-1 max-w-3xl">
         <div class="aspect-w-16 aspect-h-9">
@@ -173,7 +210,7 @@
     <div class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center bg-white rounded-md shadow-md mb-4">
       <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col flex-wrap md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 class="text-3xl sm:text-4xl md:text-5xl mb-4 font-Carter text-appcolor-blue">Vestibular Fatec
-          <br class="hidden lg:inline-block">Ensino Superior Gratuito!
+          <br class="md:inline-block"><span class="md:inline-block lg:mt-2 text-2xl">Ensino Superior Gratuito!</span>
         </h1>
         <div class="mb-8 leading-relaxed text-justify md:text-left tracking-wide">
           <p class="font-semibold ">Informações sobre o Processo Seletivo Vestibular 1º SEM/22.</p>
@@ -202,7 +239,7 @@
                   ´spdo as´dasod aspod.pdf</p>
                 <div class="p-4">
                   <a href="#" target="_blank"
-                    class="flex items-end py-2 px-4 ring-2 ring-offset-2 rounded-md transition duration-300 bg-blue-100 text-appcolor-blue focus:outline-none hover:bg-indigo-600 hover:text-blue-300 text-sm">
+                    class="flex items-end py-2 px-4 ring-2 ring-offset-2 rounded-md bg-blue-100 text-appcolor-blue focus:outline-none hover:bg-white hover:text-blue-400 text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
                       stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -219,7 +256,7 @@
                   ´spdo as´dasod aspod.pdf</p>
                 <div class="p-4 text-sm">
                   <a href="#" target="_blank"
-                    class="flex items-end py-2 px-4 ring-2 ring-offset-2 rounded-md transition duration-300 bg-blue-100 text-appcolor-blue focus:outline-none hover:bg-indigo-600 hover:text-blue-300 text-sm">
+                    class="flex items-end py-2 px-4 ring-2 ring-offset-2 rounded-md bg-blue-100 text-appcolor-blue focus:outline-none hover:bg-white hover:text-blue-300 text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
                       stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -234,7 +271,7 @@
         </div>
         <div class="flex justify-center">
           <button
-            class="inline-flex text-white bg-indigo-500 border-0 ring-2 ring-offset-2 ring-indigo-500 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">www.vestibularfatec.com.br</button>
+            class="inline-flex text-white bg-indigo-500 border-0 ring-2 ring-offset-2 ring-indigo-500 py-2 px-6 focus:outline-none hover:bg-white hover:text-indigo-600 rounded text-lg">www.vestibularfatec.com.br</button>
           <button
             class="hidden ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
         </div>
@@ -388,10 +425,8 @@
           </div>
         </div>
       </div>
-    </div>
-    
+    </div>    
   </section>
-
 
   <!-- Footer -->
   <footer class="text-appcolor-gray bg-appcolor-blue">
@@ -489,6 +524,7 @@
       </div>
    
     </div>
+    <!-- Footer bottom -->
     <div class="bg-gray-100">
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex font-medium items-center md:justify-start justify-center text-appcolor-blue">
@@ -501,7 +537,7 @@
         </a>
         <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Fatec Marília —
           <a href="Eduardo J Silva Tecnologia da Informação" rel="noopener noreferrer" class="text-appcolor-gray ml-1"
-            target="_blank">@Eduardo J Silva</a>
+            target="_blank">@EJS</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a class="text-gray-500" href="https://www.facebook.com/oficialfatecmarilia">
@@ -541,10 +577,23 @@
         </span>        
       </div>
     </div>
-  </footer>
+  </footer>  
 
-
-  
+  <script>
+     const onScrollHandler = function() {     
+        let scrollTop = document.documentElement.scrollTop          
+        let scrollHeight = document.body.scrollHeight         
+        let clientHeight = document.body.clientHeight         
+        let clientTop = document.body.clientTop         
+        var elemScrolPosition = scrollHeight - scrollTop - clientHeight;
+        
+        console.log(scrollTop, scrollHeight, clientHeight, clientTop, elemScrolPosition); 
+        if (scrollHeight + scrollTop === clientHeight)
+        {
+            console.log('scrolled');
+        }
+      }
+      window.addEventListener("scroll", onScrollHandler)
+  </script>
 </body>
-
 </html>
