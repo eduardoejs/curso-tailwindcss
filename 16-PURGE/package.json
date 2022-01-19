@@ -1,0 +1,19 @@
+{
+  "name": "16-purge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dependences": "npm install -D tailwindcss@2.2.19 postcss@latest autoprefixer@latest",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css",
+    "automation": "npm run dependences && npx tailwindcss init && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^2.2.19"
+  } 
+}
